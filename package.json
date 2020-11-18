@@ -1,16 +1,26 @@
 {
 	"name": "textarea",
-	"version": "2.1",
+	"version": "1.0.0",
+	"license": "MIT",
+	"description": "HTML Textarea ES6 Plugin",
 	"private": "true",
 	"homepage": "/textarea/",
-	"description": "HTML Textarea ES6 Plugin",
 	"scripts": {
 		"dev": "nodemon app.js",
 		"ui": "browser-sync start --proxy=localhost:3000 --files='**/*.css, **/*.pug, **/*.js' --ignore=node_modules --reload-delay 10 --no-ui --no-notify"
 	},
-	"devDependencies": {
+	"dependencies": {
 		"@primer/css": "^15.2.0",
-		"@wemake-services/stylelint-config-scss": "^0.4.1",
+		"express": "^4.17.1",
+		"express-minify": "^1.0.0",
+		"lodash": "^4.17.20",
+		"lodash.template": "^4.5.0",
+		"node-sass-middleware": "^0.11.0",
+		"object-path": ">=0.11.5",
+		"stylelint": "^13.7.2",
+		"stylelint-config-primer": "^9.3.0"
+	},
+	"devDependencies": {
 		"browser-sync": "^2.26.13",
 		"cssnano": "^4.1.10",
 		"fibers": "^5.0.0",
@@ -24,20 +34,9 @@
 		"pug": "^3.0.0",
 		"sass": "^1.29.0",
 		"sass-mq": "^5.0.1",
-		"stylelint": "^13.7.2",
-		"stylelint-config-recommended": "^3.0.0",
-		"stylelint-config-standard": "^20.0.0",
-		"stylelint-images": "^2.0.1",
+		"stylelint-group-selectors": "^1.0.7",
 		"stylelint-order": "^4.1.0",
+		"stylelint-scss": "^3.18.0",
 		"yargs-parser": "^20.2.4"
-	},
-	"dependencies": {
-		"express": "^4.17.1",
-		"lodash": "^4.17.20",
-		"lodash.template": "^4.5.0",
-		"node-sass-middleware": "^0.11.0",
-		"object-path": ">=0.11.5",
-		"stylelint-config-primer": "^9.3.0",
-		"stylelint-config-sass-guidelines": "^7.1.0"
 	}
 }

@@ -1,0 +1,49 @@
+// Imports
+@import "../../../node_modules/sass-mq/mq";
+@import "reset";
+@import "mixins";
+
+// Sass Variables
+// Breakpoints
+$mq-breakpoints: (
+  "phone": 480px,
+  "tablet": 768px,
+  "desktop": 1300px,
+  "wide": 1600px,
+);
+
+// Define customs
+:root,
+[data-theme="default"] {
+  // Variables - Font
+  --font-family-sub: "Courier Prime", monospace;
+  --font-family: "Quicksand", sans-serif;
+  --font-size: 1.6rem;
+  --line-height: 1;
+
+  // Variables - Colors
+  // background
+  --color-bg: #f8ffdf;
+  --color-bg-sec: linear-gradient(black 0%, black 32.21%, #03253a 100%);
+  --color-logo: #0ebbf2;
+  // customs
+  --color-white: white;
+  --color-black: black;
+  --color-logo-border: #f3bdbd;
+
+  // Defaults
+  position: relative;
+}
+
+// Scrollbar
+@include scrollbar(var(--color-bg), gray(10), 0, 1px);
+
+// Theme
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  background-color: var(--color-bg);
+  text-rendering: optimizeLegibility;
+
+}

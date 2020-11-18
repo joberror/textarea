@@ -1,0 +1,23 @@
+doctype html
+html(lang='en')
+	include meta.pug
+
+	meta(charset="UTF-8")
+	-
+	each key in meta
+		each content, handle in key
+			meta(name= handle, content= content)
+
+	title ES6 | Textarea
+	base(href='/')
+	-
+	each key in link
+		each content, handle in key
+			link(rel= handle, href= content)
+
+	body(data-theme='default')
+
+
+		script(type='module').
+			import { textarea as tarea } from './scripts/textarea.min.js';
+			// initiate svg module
