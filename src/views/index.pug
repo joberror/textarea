@@ -8,7 +8,7 @@ html(lang='en')
 		each content, handle in key
 			meta(name= handle, content= content)
 
-	title ES6 | Textarea
+	title ES6 Textarea
 	base(href='/')
 	-
 	each key in link
@@ -16,8 +16,9 @@ html(lang='en')
 			link(rel= handle, href= content)
 
 	body(data-theme='default')
+		div Hello World!
 
 
 		script(type='module').
-			import { textarea as tarea } from './scripts/textarea.min.js';
+			import { textarea as tarea } from './scripts/textarea.js';
 			// initiate svg module
