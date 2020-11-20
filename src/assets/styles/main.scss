@@ -46,4 +46,48 @@ body {
   background-color: var(--color-bg);
   text-rendering: optimizeLegibility;
 
+  section {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+
+    .project-info {
+      width: 40%;
+      box-sizing: border-box;
+      padding: 4vh 2vw;
+      background: var(--color-bg-sec);
+
+      nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .logo {
+          display: inline-block;
+          padding-bottom: 6px;
+          font-size: 2.1rem;
+          //font-weight: bold;
+          color: var(--color-logo);
+          border-bottom: 2px solid var(--color-logo-border);
+        }
+
+        ul {
+          display: flex;
+
+          li {
+            display: inline-block;
+
+            a {
+              padding-right: 20px;
+              font-family: var(--font-family-sub);
+              font-size: 1.8rem;
+              color: rgb(134, 134, 134);
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
